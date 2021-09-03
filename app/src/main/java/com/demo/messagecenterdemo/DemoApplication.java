@@ -3,7 +3,6 @@ package com.demo.messagecenterdemo;
 import android.app.Application;
 import android.text.TextUtils;
 
-import com.jingdong.amon.router.JDRouter;
 import com.jingdong.app.mall.bundle.CommonMessageCenter.config.MsgCenterEnvironmentConfig;
 import com.jingdong.app.mall.bundle.CommonMessageCenter.interfaces.JumpRouteI;
 import com.jingdong.app.mall.bundle.CommonMessageCenter.interfaces.MatObserverI;
@@ -21,7 +20,7 @@ public class DemoApplication extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
-//        JDRouter.init(this);
+
         AppUtils.init(this);
 
         // 初始化时传入appName
